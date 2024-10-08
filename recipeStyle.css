@@ -1,0 +1,145 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif:wght@400&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: hsl(30, 54%, 90%); /* Stone 100 */
+  color: hsl(30, 10%, 34%); /* Stone 600 */
+  margin: 0;
+  padding: 0;
+  font-size: 16px; /* Body font size */
+}
+
+.recipe-container {
+  max-width: 1440px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: hsl(0, 0%, 100%); /* White */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.recipe-content h1 {
+  font-family: 'Young Serif', serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: hsl(14, 45%, 36%); /* Brown 800 */
+  margin-bottom: 10px;
+}
+
+.recipe-content p {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: hsl(30, 10%, 34%); /* Stone 600 */
+  margin-bottom: 20px;
+}
+
+.time-info, .ingredients, .instructions, .nutrition {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: hsl(14, 45%, 36%); /* Brown 800 */
+  margin-bottom: 10px;
+}
+h3 {
+  font-family: 'Young Serif', sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: hsl(14, 45%, 36%); /* Brown 800 */
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li, ol li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: hsl(30, 10%, 34%); /* Stone 600 */
+  margin-bottom: 10px;
+}
+
+ul li::before {
+  content: '•';
+  color: hsl(332, 51%, 32%); /* Rose 800 */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Mobile View (375px) */
+@media (max-width: 375px) {
+  .recipe-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p, ul li, ol li {
+    font-size: 0.9rem;
+  }
+
+  .time-info, .ingredients, .instructions, .nutrition h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* General Media Queries */
+@media (min-width: 768px) {
+  .recipe-container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .image-container {
+    flex: 1;
+  }
+
+  .recipe-content {
+    flex: 2;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p, ul li, ol li {
+    font-size: 1.1rem;
+  }
+}
+
+/* Desktop View (1440px) */
+@media (min-width: 1440px) {
+  .recipe-container {
+    gap: 40px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p, ul li, ol li {
+    font-size: 1.2rem;
+  }
+
+  .time-info, .ingredients, .instructions, .nutrition h3 {
+    font-size: 1.5rem;
+  }
+}
